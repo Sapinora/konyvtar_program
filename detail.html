@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Könyvtár Program</title>
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span><img src="img/menu.png" alt="menu" title="menu" /> </span>
+        <h1>Könyvtár Program</h1>
+    </header>
+    <main>
+        <div class="col-3" id="kategoria">
+            <header class="m-b-10">
+                <h2>Kategóriák</h2>
+                <span class="f-right"><img src="img/arrow_left.png" alt="összecsuk" title="összecsuk" /></span>
+            </header>
+            <div>
+                <input type="checkbox" name="fantasy" /> <label for="fantasy">Fantasy</label><br/>
+                <input type="checkbox" name="regény" /> <label for="regény">Regény</label><br/>
+                <input type="checkbox" name="moticációs" /> <label for="moticációs">Motivációs</label><br/>
+                <hr />
+                <a href="admin/login.html"><span><img src="img/login.png" alt="belépés" title="belépés"/> Belépés</span></a>
+            </div>
+        </div>
+    
+        <div class="col-9">
+            <div class="col-9" id="tartalom">
+                <header class="m-b-20">
+                    <h2>Könyvek listája</h2>
+                </header>
+                <div>
+                    <input type="search" name="search" class="m-b-20" />
+                    <button>Keresés</button>
+                    <button>Mégse</button>
+
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Cím</th>
+                            <th>Szerző</th>
+                            <th>Kategória</th>
+                        </tr>
+                        <tr>
+                            <td>Gyűrűk ura</td>
+                            <td>J. R. R. Tolkien</td>
+                            <td>Fantasy, Regény</td>
+                        </tr>
+                        <tr>
+                            <td>A Titok</td>
+                            <td>Rhonda Brain</td>
+                            <td>Motivációs</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-9" id="reszletes">
+                <header class="m-b-20">
+                    <h2>Részletes nézet</h2>
+                    <span class="f-right"><img src="img/delete.png" alt="bezár" title="bezár" /></span>
+                </header>
+                <div class="col-3">
+                    <img src="img/logout.png" alt="" title="" />
+                </div>
+                <div class="col-6">
+                    <table cellspacing="0" id="reszletes-tablazat">
+                        <tr>
+                            <th>Szerző:</th>
+                            <td>J R. R. Tolkien</td>
+                        </tr>
+                        <tr>
+                            <th>Oldalszám:</th>
+                            <td>1800</td>
+                        </tr>
+                        <tr>
+                            <th>Nyelv:</th>
+                            <td>magyar</td>
+                        </tr>
+                        <tr>
+                            <th>Kategóriák:</th>
+                            <td>Fantasy, Regény</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-9" id="leiras">
+                    <span style="font-weight: bold;">Leírás:</span>
+                    <p>Lorem ipsum ...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
